@@ -23,7 +23,7 @@ app.get('/api/pair', async (req, res) => {
 
     const headers = {
         'accept': '*/*',
-        'authorization': 'Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6NDI3LCJlbWFpbCI6InBhaGFqaXJvYmxveEBnbWFpbC5jb20iLCJyb2xlIjoidXNlciIsImlhdCI6MTc3NjIyMTA3OSwiZXhwIjoxNzc2ODI1ODc5fQ.-sIPFkMULmUR8wzxPQ3a7TEMIhtQ7oecs6dk4xUOVT8', 
+        'authorization': process.env.WA_TOKEN, 
         'content-type': 'application/json',
         'user-agent': 'Mozilla/5.0 (Linux; Android 10; K) AppleWebKit/537.36'
     };
@@ -78,7 +78,7 @@ app.get('/api/qr', async (req, res) => {
 
     const headers = {
         'accept': '*/*',
-        'authorization': 'Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6NDI3LCJlbWFpbCI6InBhaGFqaXJvYmxveEBnbWFpbC5jb20iLCJyb2xlIjoidXNlciIsImlhdCI6MTc3NjIyMTA3OSwiZXhwIjoxNzc2ODI1ODc5fQ.-sIPFkMULmUR8wzxPQ3a7TEMIhtQ7oecs6dk4xUOVT8', 
+        'authorization': process.env.WA_TOKEN, 
         'content-type': 'application/json',
         'user-agent': 'Mozilla/5.0 (Linux; Android 10; K) AppleWebKit/537.36'
     };
