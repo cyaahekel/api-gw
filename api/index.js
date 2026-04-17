@@ -125,7 +125,7 @@ app.get('/api/devices', async (req, res) => {
     try {
         const response = await fetch('https://pusatwa.com/api/user/devices', {
             method: 'GET',
-            headers: { 'accept': '*/*', 'authorization': tokenkontol }
+            headers: { 'accept': '*/*', 'authorization': process.env.WA_TOKEN }
         });
         const data = await response.json();
         // Langsung lempar balasan array perangkat ke front-end buat dibaca sent & delivered-nya
